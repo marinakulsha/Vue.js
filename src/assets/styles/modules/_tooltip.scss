@@ -1,0 +1,36 @@
+.tooltip {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+
+    padding: 8px;
+    max-width: 150px;
+
+    background-color: #444444;
+      
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      top: 100%;
+      right: 4px;
+
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #444444;
+    }
+
+    &__content {
+      font-size: 0.8em;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: lowercase;
+    }
+}
